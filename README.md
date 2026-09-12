@@ -7,6 +7,16 @@ We are also going to have to create an auth for the user to make requests, and s
 
 Auth server for scopes will be its own server, by which we will pull data from onto this server
 
+Model providers to support:
+- Anthropic
+- Bedrock
+- OpenAI
+- Qwen
+- Tensormux
+- Google
+- Custom (will look for a way to allow users add api key and store the secret to be used in the application later)
 
+
+Use knowledge bases(KB) in aws bedrock for context if you can.
 
 <!--[C:\Users\HP\AppData\Roaming\gcloud\application_default_credentials.json]-->

@@ -8,7 +8,7 @@ from app.services.llm import ChatMessage
 class ChatRequest(BaseModel):
   """Chat completion request. All inference goes through the LLM interface"""
   messages: list[ChatMessage] = Field(min_length=1)
-  provider: Literal["tensormux", "google", "Bedrock", "Anthropic", "OpenAI", "Custom"] | None = Field(
+  provider: Literal["tensormux", "google", "Bedrock"] | None = Field(
     default=None,
     description="Per request override. Defaults to LLM_PROVIDER"
   )

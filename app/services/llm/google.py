@@ -26,7 +26,6 @@ from app.services.llm.base import (
   StreamChunk,
 )
 
-from app.config import settings
 
 
 
